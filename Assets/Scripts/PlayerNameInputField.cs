@@ -17,10 +17,8 @@ namespace Com.MyCompany.MyGame
             InputField _inputField = this.GetComponent<InputField>();
             if(_inputField != null)
             {
-                Debug.Log(defaultName);
                 if (PlayerPrefs.HasKey(playerNamePrefKey))
                 {
-                Debug.Log(defaultName);
                     defaultName = PlayerPrefs.GetString(playerNamePrefKey);
                     _inputField.text = defaultName;
                 }
